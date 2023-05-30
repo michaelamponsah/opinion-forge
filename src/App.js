@@ -1,6 +1,6 @@
 const App = () => (
   <div className="App">
-    <h1>Opinion Forge</h1>
+    <h1 className="text-3xl font-bold underline">Opinion Forge</h1>
   </div>
 );
 
