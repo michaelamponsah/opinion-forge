@@ -1,7 +1,21 @@
+/* eslint-disable react/button-has-type */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const AppButton = () => (
-  <button>Button</button>
+const Button = ({ type, text }) => (
+  <button type={type}>
+    {text}
+  </button>
 );
 
-export default AppButton;
+Button.propTypes = {
+  type: PropTypes.string,
+  text: PropTypes.string,
+};
+
+Button.defaultProps = {
+  type: 'button',
+  text: 'Button',
+};
+
+export default Button;

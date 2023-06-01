@@ -1,8 +1,6 @@
 {
-  "compilerOptions":{
-    "baseUrl": ".",
-    "paths": {
-      "@features/*": ["src/features/*"]
-    }
-  }
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
 }
