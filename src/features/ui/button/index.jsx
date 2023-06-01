@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const AppButton = () => {
-  return (
-    <button>Button</button>
-  )
-}
+const AppButton = () => (
+  <button>Button</button>
+);
 
-export default AppButton
+export default AppButton;
