@@ -16,7 +16,7 @@ const Button = ({
 
   return (
     <button
-      className={`${btnColor} text-custom-light-50 text-white px-8 py-2 font-medium rounded flex gap-2 justify-center items-center`}
+      className={`${btnColor} text-custom-light-50 text-white px-8 py-2 font-medium rounded-lg flex gap-2 justify-center items-center`}
       type={type}
       onClick={handleBtnClick}
     >
