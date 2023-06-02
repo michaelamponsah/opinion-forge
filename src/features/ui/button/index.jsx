@@ -3,7 +3,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({
-  type, text, handleClick, btnColor,
+  type,
+  label,
+  handleClick,
+  btnColor,
 }) => {
   const handleBtnClick = (e) => {
     e.preventDefault();
@@ -16,21 +19,21 @@ const Button = ({
       type={type}
       onClick={handleBtnClick}
     >
-      {text}
+      {label}
     </button>
   );
 };
 
 Button.propTypes = {
   type: PropTypes.string,
-  text: PropTypes.string,
+  label: PropTypes.string,
   handleClick: PropTypes.func.isRequired,
   btnColor: PropTypes.string,
 };
 
 Button.defaultProps = {
   type: 'button',
-  text: 'Button',
+  label: 'Button',
   btnColor: 'bg-custom-purple',
 };
 
