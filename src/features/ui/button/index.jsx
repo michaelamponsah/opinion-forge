@@ -5,8 +5,9 @@ import PropTypes from 'prop-types';
 const Button = ({
   type,
   label,
-  handleClick,
   btnColor,
+  handleClick,
+  icon,
 }) => {
   const handleBtnClick = (e) => {
     e.preventDefault();
@@ -15,11 +16,12 @@ const Button = ({
 
   return (
     <button
-      className={`${btnColor} text-custom-light-50 text-white px-10 font-medium py-2 rounded`}
+      className={`${btnColor} text-custom-light-50 text-white px-8 py-2 font-medium rounded flex gap-2 justify-center items-center`}
       type={type}
       onClick={handleBtnClick}
     >
-      {label}
+      {icon && <span>{icon}</span>}
+      <span>{label}</span>
     </button>
   );
 };
@@ -29,12 +31,14 @@ Button.propTypes = {
   label: PropTypes.string,
   handleClick: PropTypes.func.isRequired,
   btnColor: PropTypes.string,
+  icon: PropTypes.element,
 };
 
 Button.defaultProps = {
   type: 'button',
   label: 'Button',
   btnColor: 'bg-custom-purple',
+  icon: '',
 };
 
 export default Button;
