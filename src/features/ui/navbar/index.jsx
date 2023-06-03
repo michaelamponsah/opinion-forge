@@ -1,7 +1,7 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import suggestionsIcon from '../../../assets/icons/icon-suggestions.svg';
-import SuggestionsFilter from './suggestions-filter';
+import SuggestionsFilter from './suggestions-filtering';
 
 const Navbar = () => {
   return (
